@@ -12,7 +12,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('signup/', views.Signup, name='signup'),
     path('sign_in/', views.login_u, name='sign_in'),
+    path('', views.index, name='index'),
     path('health', views.health, name='health'),
+    
 
     # Account activation URL (use re_path for regex)
     re_path(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
