@@ -14,6 +14,7 @@ urlpatterns = [
     path('sign_in/', views.login_u, name='sign_in'),
     path('', views.index, name='index'),
     path('health', views.health, name='health'),
+    path('signup/', views.Signup, name='signup'),
     
 
     # Account activation URL (use re_path for regex)
